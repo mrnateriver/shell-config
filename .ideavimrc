@@ -1,0 +1,36 @@
+let mapleader=" "
+
+set easymotion
+set surround
+set NERDTree
+set commentary
+set highlightedyank
+
+set which-key
+set notimeout
+let g:WhichKey_ShowVimActions="true"
+
+set ideajoin
+set ideamarks
+set idearefactormode=select
+
+set incsearch
+set rnu
+set wrap
+
+map <leader>ca <Action>(ShowIntentionActions)
+map <leader>rn <Action>(RenameElement)
+map \          <Action>(SelectInProjectView)
+map <leader>a  <Action>(ActivateStructureToolWindow)
+map <leader>ws <Action>(GotoSymbol)
+map <leader>ds <Action>(GotoSymbol)
+map <leader>f  <Action>(ReformatCode)
+map <leader>q  <Action>(ActivateProblemsViewToolWindow)
+map <leader>sf <Action>(GotoFile)
+map <leader>sg <Action>(FindInPath)
+map [d         <Action>(GotoPreviousError)
+map ]d         <Action>(GotoNextError)
+map {          <Action>(MethodUp)
+map }          <Action>(MethodDown)
+map K          <Action>(ShowHoverInfo)
+
