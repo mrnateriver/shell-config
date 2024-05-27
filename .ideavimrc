@@ -13,10 +13,13 @@ let g:WhichKey_ShowVimActions="true"
 set ideajoin
 set ideamarks
 set idearefactormode=select
+set clipboard=ideaput
 
 set incsearch
 set rnu
 set wrap
+set gd
+set hlsearch
 
 map <leader>ca <Action>(ShowIntentionActions)
 map <leader>rn <Action>(RenameElement)
