@@ -31,9 +31,11 @@ map <leader>f  <Action>(ReformatCode)
 map <leader>q  <Action>(ActivateProblemsViewToolWindow)
 map <leader>sf <Action>(GotoFile)
 map <leader>sg <Action>(FindInPath)
+map <leader>s. <Action>(RecentFiles)
 map [d         <Action>(GotoPreviousError)
 map ]d         <Action>(GotoNextError)
 map {          <Action>(MethodUp)
 map }          <Action>(MethodDown)
 map K          <Action>(ShowHoverInfo)
+
 
