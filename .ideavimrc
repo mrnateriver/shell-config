@@ -6,9 +6,6 @@ set commentary
 set highlightedyank
 set notimeout
 
-set which-key
-let g:WhichKey_ShowVimActions="true"
-
 set ideajoin
 set ideamarks
 set idearefactormode=select
@@ -23,7 +20,6 @@ set gd
 set hlsearch
 
 map <leader>ca <Action>(ShowIntentionActions)
-map <leader>rn <Action>(RenameElement)
 map \          <Action>(SelectInProjectView)
 map <leader>a  <Action>(ActivateStructureToolWindow)
 map <leader>ws <Action>(GotoSymbol)
@@ -38,4 +34,66 @@ map ]d         <Action>(GotoNextError)
 map {          <Action>(MethodUp)
 map }          <Action>(MethodDown)
 map K          <Action>(ShowHoverInfo)
+
+map <leader>zc <Action>(CollapseAllRegions)
+map <leader>zo <Action>(ExpandAllRegions)
+
+" Refactorings
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>rf <Action>(IntroduceField)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+
+" Move between tabs with Alt + p/n
+nnoremap <A-n> :tabnext<CR>
+nnoremap <A-p> :tabprev<CR>
+
+" Move between panes with Ctrl + h/j/k/l
+nnoremap <A-h> <C-w>h
+nnoremap <A-l> <C-w>l
+nnoremap <A-k> <C-w>k
+nnoremap <A-j> <C-w>j
+
+" Which-Key
+set which-key
+let g:WhichKey_ShowVimActions="true"
+let g:WhichKey_FontSize = 16
+let g:WhichKey_CommandColor = "#41ead4"
+let g:WhichKey_PrefixColor = "#f335b2"
+let g:WhichKey_SortOrder = "by_key_prefix_first"
+
+let g:WhichKeyDesc_leader = "<leader> Leader key"
+
+let g:WhichKeyDesc_code = "<leader>c Code"
+let g:WhichKeyDesc_code_action = "<leader>ca Code Actions"
+
+let g:WhichKeyDesc_fold = "<leader>z Folding"
+let g:WhichKeyDesc_fold_all = "<leader>zc Fold all regions"
+let g:WhichKeyDesc_unfold_all = "<leader>zo Unfold all regions"
+
+let g:WhichKeyDesc_workspace = "<leader>w Workspace"
+let g:WhichKeyDesc_workspace_split_vertically = "<leader>ws Workspace Symbols"
+
+let g:WhichKeyDesc_document = "<leader>d Document"
+let g:WhichKeyDesc_search_symbols = "<leader>ds Search Symbols"
+
+let g:WhichKeyDesc_structure= "<leader>a Document Symbols"
+
+let g:WhichKeyDesc_format_document = "<leader>f Format Document"
+
+let g:WhichKeyDesc_show_diagnostics = "<leader>q Open Diagnostics List"
+
+let g:WhichKeyDesc_refactoring = "<leader>r Refactor"
+let g:WhichKeyDesc_refactoring_rename = "<leader>rn Rename element"
+let g:WhichKeyDesc_refactoring_method = "<leader>rm Extract method"
+let g:WhichKeyDesc_refactoring_variable = "<leader>rv Introduce variable"
+let g:WhichKeyDesc_refactoring_field = "<leader>rf Introduce field"
+let g:WhichKeyDesc_refactoring_signature = "<leader>rs Change signature"
+let g:WhichKeyDesc_refactoring_all = "<leader>rr Open refactorings list"
+
+let g:WhichKeyDesc_goto = "g Go to X"
+let g:WhichKeyDesc_goto_declaration = "gd Go to Definition"
+
 
