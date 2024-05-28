@@ -2,18 +2,19 @@ let mapleader=" "
 
 set easymotion
 set surround
-set NERDTree
 set commentary
 set highlightedyank
+set notimeout
 
 set which-key
-set notimeout
 let g:WhichKey_ShowVimActions="true"
 
 set ideajoin
 set ideamarks
 set idearefactormode=select
 set clipboard=ideaput
+set clipboard+=unnamed
+set scrolloff=5
 
 set incsearch
 set rnu
@@ -37,5 +38,4 @@ map ]d         <Action>(GotoNextError)
 map {          <Action>(MethodUp)
 map }          <Action>(MethodDown)
 map K          <Action>(ShowHoverInfo)
-
 
