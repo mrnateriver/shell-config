@@ -1,0 +1,222 @@
+{
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.lineHeight": 2,
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+  "todo-tree.highlights.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "git.autofetch": true,
+  "editor.lineNumbers": "relative",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "vim.surround": true,
+  "vim.leader": " ",
+  "vim.foldfix": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.matchpairs": "(:),{:},[:],<:>",
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": true,
+    "<C-w>": false,
+    "<C-q>": false,
+    "<C-i>": true
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        "s",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.showAllSymbols"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "n"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "c",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "d"
+      ],
+      "commands": [
+        "editor.action.openLink",
+        "editor.action.revealDefinition"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a"
+      ],
+      "commands": [
+        "outline.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.actions.view.problems"
+      ]
+    },
+    {
+      "before": [
+        "%"
+      ],
+      "commands": [
+        "editor.action.jumpToBracket"
+      ]
+    },
+    {
+      "before": [
+        "\\"
+      ],
+      "commands": [
+        "workbench.files.action.showActiveFileInExplorer"
+      ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "<C-i>"
+      ],
+      "commands": [
+        "inlineChat.start"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "%"
+      ],
+      "commands": [
+        "editor.action.jumpToBracket"
+      ]
+    }
+  ],
+  "editor.fontSize": 14,
+  "settingsSync.keybindingsPerPlatform": false,
+  "background.renderContentAboveBackground": true,
+  "background.smoothImageRendering": true,
+  "background.windowBackgrounds": [
+    "https://948749-mrnateriver.tmweb.ru:23891/bg.jpg"
+  ],
+  "background.backgroundBlur": [
+    "0px",
+    "0",
+    "0",
+    "0"
+  ],
+  "editor.minimap.enabled": false,
+  "git.confirmSync": false,
+  "background.autoInstall": false,
+  "notebook.outline.showCodeCells": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.linkedEditing": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tailwind-fold.autoFold": false,
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "tailwindcss",
+    "*.less": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "background.backgroundOpacity": [
+    0.95,
+    0.9,
+    0.9,
+    0.9
+  ]
+}

@@ -1,0 +1,35 @@
+
+export COLORTERM="truecolor"
+
+export OPENAI_API_KEY="<insert key here>"
+
+export PATH="/usr/local/go/bin:$PATH"
+export PATH="~/go/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
+
+alias vi='nvim'
+alias s='ssh'
+alias tf='terraform'
+alias tm='tmux'
+alias kc='kubectl'
+alias lg='lazygit'
+alias ldock='lazydocker'
+alias mc='SHELL=bash mc'
+
+# ChatGPT
+chat_gpt_how() {
+  openai api chat.completions.create -g system "you are being asked about linux os and its command line tools. be brief and on point" -g user "how to $*" -m gpt-4 | glow -
+}
+chat_gpt_why() {
+  openai api chat.completions.create -g system "you are being asked about linux os and its command line tools. be brief and on point" -g user "why $*" -m gpt-4 | glow -
+}
+alias howto='noglob chat_gpt_how'
+alias why='noglob chat_gpt_why'
+
+export EDITOR='nvim'
+
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
+
+export BAT_THEME="GitHub"
+
