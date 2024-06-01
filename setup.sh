@@ -18,5 +18,7 @@ echo "\n[[ ! -f ~/.zshrc.custom ]] || source ~/.zshrc.custom" >> ~/.zshrc
 # Distro-specific, so perform manually
 # https://github.com/sharkdp/bat
 # https://github.com/ranger/ranger
-# sudo apt update && sudo apt install bat ranger
+# https://github.com/junegunn/fzf
+# brew update && brew install bat ranger fzf
+# sudo apt update && sudo apt install bat ranger fzf
 

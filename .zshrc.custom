@@ -8,6 +8,7 @@ export PATH="~/go/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 
 alias vi='nvim'
+alias vim='nvim'
 alias s='ssh'
 alias tf='terraform'
 alias tm='tmux'
@@ -15,6 +16,8 @@ alias kc='kubectl'
 alias lg='lazygit'
 alias ldock='lazydocker'
 alias mc='SHELL=bash mc'
+
+alias fzv="fzf --bind 'enter:become(nvim {})'"
 
 # ChatGPT
 chat_gpt_how() {
@@ -32,4 +35,6 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
 
 export BAT_THEME="GitHub"
+
+export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}"'
 
