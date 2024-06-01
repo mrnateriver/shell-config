@@ -4,8 +4,8 @@ export COLORTERM="truecolor"
 export OPENAI_API_KEY="<insert key here>"
 
 export PATH="/usr/local/go/bin:$PATH"
-export PATH="~/go/bin:$PATH"
-export PATH="~/.local/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 alias vi='nvim'
 alias vim='nvim'
