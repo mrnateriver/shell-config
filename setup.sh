@@ -20,6 +20,11 @@ echo "\n[[ ! -f ~/.zshrc.custom ]] || source ~/.zshrc.custom" >> ~/.zshrc
 # https://github.com/sharkdp/bat
 # https://github.com/ranger/ranger
 # https://github.com/junegunn/fzf
-# brew update && brew install bat ranger fzf
-# sudo apt update && sudo apt install bat ranger fzf
-
+# https://github.com/charmbracelet/glow
+# Mac OS:
+# brew update && brew install bat ranger fzf glow
+# Ubuntu:
+# sudo mkdir -p /etc/apt/keyrings
+# curl -fsSL https://repo.charm.sh/apt/gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/charm.gpg
+# echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" | sudo tee /etc/apt/sources.list.d/charm.list
+# sudo apt update && sudo apt install glow bat ranger fzf
