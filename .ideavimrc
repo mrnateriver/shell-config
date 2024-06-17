@@ -56,6 +56,10 @@ nnoremap <A-l> <C-w>l
 nnoremap <A-k> <C-w>k
 nnoremap <A-j> <C-w>j
 
+" Navigation
+nmap <C-o> :action Back<CR>
+nmap <C-i> :action Forward<CR>
+
 " Which-Key
 set which-key
 let g:WhichKey_ShowVimActions="true"
