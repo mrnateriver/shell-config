@@ -23,10 +23,11 @@ echo "\n[[ ! -f ~/.zshrc.custom ]] || source ~/.zshrc.custom" >> ~/.zshrc
 # https://github.com/charmbracelet/glow
 # https://github.com/wagoodman/dive
 # Mac OS:
-# brew update && brew install bat ranger fzf glow dive
+# brew update && brew install bat ranger fzf glow dive helm derailed/k9s/k9s fluxcd/tap/flux
 # Ubuntu:
 # sudo mkdir -p /etc/apt/keyrings
 # curl -fsSL https://repo.charm.sh/apt/gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/charm.gpg
 # echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" | sudo tee /etc/apt/sources.list.d/charm.list
 # sudo apt update && sudo apt install glow bat ranger fzf
 # sudo snap install dive
+# TODO: k9s flux
