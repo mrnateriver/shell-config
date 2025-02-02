@@ -56,6 +56,10 @@ nnoremap <A-l> <C-w>l
 nnoremap <A-k> <C-w>k
 nnoremap <A-j> <C-w>j
 
+" Fix exiting V-Line mode on identation
+vnoremap < <gv
+vnoremap > >gv
+
 " Navigation
 nmap <C-o> :action Back<CR>
 nmap <C-i> :action Forward<CR>
