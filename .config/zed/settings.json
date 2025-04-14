@@ -1,0 +1,65 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-7-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "telemetry": {
+    "metrics": false
+  },
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "relative_line_numbers": true,
+  "ensure_final_newline_on_save": true,
+  "terminal": {
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_size": 12
+  },
+  "buffer_font_family": "JetBrains Mono",
+  "inlay_hints": {
+    "enabled": false
+  },
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true
+    }
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "command_aliases": {
+    "<": "<gv",
+    ">": ">gv"
+  },
+  "vim": {
+    "use_system_clipboard": "always",
+    "toggle_relative_line_numbers": true
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Fleet Light",
+    "dark": "One Dark"
+  },
+  "languages": {
+    "TypeScript": {
+      "format_on_save": "prettier",
+      "code_actions_on_format": {
+        "source.organizeImports": false,
+        "source.fixAll": true
+      }
+    }
+  }
+}
