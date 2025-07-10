@@ -7,10 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "assistant": {
+  "agent": {
+    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
@@ -18,8 +19,8 @@
     "metrics": false
   },
   "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
   "relative_line_numbers": true,
   "ensure_final_newline_on_save": true,
   "terminal": {
@@ -50,15 +51,42 @@
   },
   "theme": {
     "mode": "system",
-    "light": "Fleet Light",
-    "dark": "One Dark"
+    "light": "Ayu Mirage",
+    "dark": "GitHub Dark Default"
   },
   "languages": {
     "TypeScript": {
-      "format_on_save": "prettier",
       "code_actions_on_format": {
-        "source.organizeImports": false,
+        "source.organizeImports": true,
         "source.fixAll": true
+      }
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll": true
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll": true
+      }
+    },
+    "JSX": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll": true
+      }
+    },
+    "SCSS": {
+      "language_servers": ["some-sass-lsp"]
+    }
+  },
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true
       }
     }
   }
