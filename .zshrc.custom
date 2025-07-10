@@ -2,35 +2,48 @@ export LC_ALL=en_US.UTF-8
 
 export COLORTERM="truecolor"
 
-export OPENAI_API_KEY="<insert key here>"
+# Left here for reference - added automatically to .zshrc by oh-my-zsh during installation
+# ZSH_THEME="powerlevel10k/powerlevel10k"
+# plugins=(git azure kubectl kubectx docker docker-compose)
+# source $ZSH/oh-my-zsh.sh
+
+export NVIM_LISTEN_ADDRESS=/tmp/nvim-socket
+
+export EDITOR='nvim'
 
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$HOME/.dotnet/tools"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH=$HOME/Library/Flutter/bin:$PATH
+export PATH=$HOME/.gem/bin:$PATH
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/3.3.0/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# export JAVA_HOME="~/Library/Java/JavaVirtualMachines/jdk/Contents/Home"
 
 alias vi='nvim'
 alias vim='nvim'
 alias s='ssh'
 alias tf='terraform'
 alias tm='tmux'
+alias k='kubectl'
 alias kc='kubectl'
 alias lg='lazygit'
 alias ldock='lazydocker'
 alias mc='SHELL=bash mc'
-
 alias fzv="fzf --bind 'enter:become(nvim {})'"
 
-# ChatGPT
-chat_gpt_how() {
-  openai api chat.completions.create -g system "you are being asked about linux os and its command line tools. be brief and on point" -g user "how to $*" -m gpt-4 | glow -
+# GH Copilot
+copilot_how() {
+  ghcs "$*"
 }
-chat_gpt_why() {
-  openai api chat.completions.create -g system "you are being asked about linux os and its command line tools. be brief and on point" -g user "why $*" -m gpt-4 | glow -
-}
-alias howto='noglob chat_gpt_how'
-alias why='noglob chat_gpt_why'
-
-export EDITOR='nvim'
+alias howto='noglob copilot_how'
 
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
@@ -38,4 +51,8 @@ export MANROFFOPT="-c"
 export BAT_THEME="GitHub"
 
 export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}"'
+
+eval $(thefuck --alias)
+eval "$(gh copilot alias -- zsh)"
+eval "$(fzf --zsh)"
 
