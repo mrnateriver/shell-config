@@ -1,18 +1,18 @@
 {
-  "workbench.colorTheme": "GitHub Dark Default",
   "editor.fontLigatures": true,
-  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
-  "editor.lineHeight": 2,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "normal",
+  "editor.lineHeight": 1.8,
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
   "todo-tree.highlights.enabled": false,
   "redhat.telemetry.enabled": false,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "git.autofetch": true,
   "editor.lineNumbers": "relative",
@@ -29,7 +29,8 @@
     "<C-z>": true,
     "<C-w>": false,
     "<C-q>": false,
-    "<C-i>": true
+    "<C-i>": false,
+    "<C-o>": false
   },
   "vim.normalModeKeyBindings": [
     {
@@ -192,31 +193,117 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 5000,
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.formatOnSave": true
   },
   "editor.linkedEditing": true,
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.formatOnSave": true
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "tailwind-fold.autoFold": false,
-  "files.associations": {
-    "*.css": "tailwindcss",
-    "*.scss": "tailwindcss",
-    "*.less": "tailwindcss"
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
+  "tailwind-fold.autoFold": false,
   "editor.quickSuggestions": {
     "strings": "on"
   },
-  "github.copilot.editor.enableAutoCompletions": true,
   "background.backgroundOpacity": [
     0.95,
     0.9,
     0.9,
     0.9
-  ]
+  ],
+  // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "typescript.tsserver.web.typeAcquisition.enabled": true,
+  "typescript.experimental.updateImportsOnPaste": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsserver.log": "off",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.documentSelectors": [
+    "*.json"
+  ],
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "workbench.colorTheme": "GitHub Dark Default",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "background.useInvertedOpacity": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "terminal.integrated.allowedLinkSchemes": [
+    "file",
+    "http",
+    "https",
+    "mailto",
+    "vscode",
+    "vscode-insiders",
+    "docker-desktop"
+  ],
+  "playwright.showTrace": false,
+  "Prettier-SQL.SQLFlavourOverride": "postgresql",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "git.suggestSmartCommit": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "diffEditor.maxComputationTime": 0,
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.blame.editorDecoration.enabled": true,
+  "stylelint.config": {},
+  "stylelint.validate": [
+    "css",
+    "postcss",
+    "scss",
+    "sass"
+  ],
+  "editor.codeActionsOnSave": {},
+  "terminal.integrated.minimumContrastRatio": 1,
+  "chat.agent.enabled": true,
+  "github.copilot.chat.agent.thinkingTool": true,
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "{hexdiff}:/**/*.*": "hexEditor.hexedit",
+    "file:/**/*.csv": "jupyter-data-wrangler"
+  },
+  "notebook.lineNumbers": "on",
+  "docker.extension.enableComposeLanguageServer": false,
+  "github.copilot.chat.codesearch.enabled": true,
+  "chat.agent.maxRequests": 128,
+  "chat.tools.autoApprove": true,
+  "csharp.inlayHints.enableInlayHintsForTypes": true,
+  "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
+  "editor.stickyScroll.enabled": true,
+  "remote.defaultExtensionsIfInstalledLocally": [
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "GitHub.vscode-pull-request-github"
+  ],
+  "plantuml.render": "Local"
 }
